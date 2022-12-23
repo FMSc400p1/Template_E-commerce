@@ -1,3 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
 <?php
 
 function cadastrar_usuario($con,$nome, $email, $senha, $dt, $tipo)
@@ -11,7 +21,7 @@ function cadastrar_usuario($con,$nome, $email, $senha, $dt, $tipo)
     $user->bindParam(5, $tipo);
 
     if ($user->execute()) {
-        redirecionar_pagina("Seus dados foram cadastrados", "../index.php");
+        redirecionar_pagina("Seus dados foram cadastrados", "../index.html");
     }
 }
 
@@ -75,3 +85,9 @@ function deletarU($con,$id,$img,$pasta){
         }
         }
 ?>
+
+
+
+</body>
+</html>
+
